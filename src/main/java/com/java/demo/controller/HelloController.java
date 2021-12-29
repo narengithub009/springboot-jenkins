@@ -26,6 +26,7 @@ public class HelloController {
 	@GetMapping("{name}")
 	public String getMessage(@PathVariable("name") String empName) {
 		log.info("Hello "+empName+" Welecome"+new Random().nextInt());
+		System.out.println("Hello world "+empName);
 		return "Hello "+empName+" Welecome";
 	}
 }
