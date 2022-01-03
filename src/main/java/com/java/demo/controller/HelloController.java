@@ -29,4 +29,11 @@ public class HelloController {
 		System.out.println("Hello world "+empName);
 		return "Hello "+empName+" Welecome";
 	}
+	
+	@GetMapping("hello/{name}")
+	public String sayHello(@PathVariable("name") String name) {
+		
+		log.info("Hello : "+name);
+		return name;
+	}
 }
