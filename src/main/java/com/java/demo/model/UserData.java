@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class UserData {
 	
 	@Id
 	@GeneratedValue
@@ -13,11 +13,11 @@ public class User {
 	private String name;
 	private int age;
 	
-	public User() {
+	public UserData() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(long id, String name, int age) {
+	public UserData(long id, String name, int age) {
 		super();
 		this.id = id;
 		this.name = name;
