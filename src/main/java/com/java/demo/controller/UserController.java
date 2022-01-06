@@ -30,8 +30,9 @@ public class UserController {
 	@GetMapping
 	public List<UserData> getAllUsers(){
 		
-		//UserData user2=new UserData(1, "Naren", 34);
-		log.info("User Data : "+service.getAllUSer());
+		List<UserData> user2=service.getAllUSer();
+	//	log.info("dfds" : user2.stream().forEach(s->System.out.println(s)));
+		user2.stream().forEach(s->System.out.println(s.getId()+"  "+s.getName()+"  "+s.getAge()));
 		return service.getAllUSer();
 	}
 	
