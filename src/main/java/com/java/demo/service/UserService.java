@@ -11,4 +11,5 @@ public interface UserService {
 
 	public UserData saveUser(UserData user);
 	public List<UserData> getAllUSer();
+	public UserData updateUser(UserData userData, long id);
 }
