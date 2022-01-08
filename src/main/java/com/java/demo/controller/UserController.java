@@ -51,6 +51,7 @@ public class UserController {
 	@PutMapping("{id}")
 	public ResponseEntity<UserData> updateUserData(@RequestBody UserData userData, @PathVariable("id") long id){
 		
+		log.info("User data :" +id+" "+userData.getName()+" "+userData.getAge());
 		return new ResponseEntity<UserData>(service.updateUser(userData,id), HttpStatus.ACCEPTED);
 		
 		
