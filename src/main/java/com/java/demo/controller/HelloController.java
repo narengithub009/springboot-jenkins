@@ -33,7 +33,7 @@ public class HelloController {
 	@GetMapping("hello/{name}")
 	public String sayHello(@PathVariable("name") String name) {
 		
-		log.info("Hello : "+name);
+		log.info("Hello : "+name+" to new world  ");
 		return name;
 	}
 }
