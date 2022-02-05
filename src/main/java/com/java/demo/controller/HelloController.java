@@ -18,7 +18,7 @@ public class HelloController {
 
 	@GetMapping("/date")
 	public String showCurrentDate() {
-		log.info("Date : {}", new Date().toString());
+		log.info("Date and Time : {}", new Date().toString());
 		
 		return new Date().toString();
 	}
