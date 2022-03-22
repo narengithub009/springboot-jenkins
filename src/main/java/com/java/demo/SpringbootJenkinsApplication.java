@@ -18,7 +18,7 @@ public class SpringbootJenkinsApplication {
 		log.info("Appliction running....");
 	}
 	public static void main(String[] args) {
-		log.info("Springboot Application main running successfully.....");
+		log.info("Springboot Application running successfully.....");
 		SpringApplication.run(SpringbootJenkinsApplication.class, args);
 	}
 
