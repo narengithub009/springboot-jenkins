@@ -15,7 +15,7 @@ public class SpringbootJenkinsApplication {
 	
 	@PostConstruct
 	public void getMessage() {
-		log.info("Appliction running....INV-22.9.1 change");
+		log.info("Appliction running....INV-22.9.1 change today commits");
 	}
 	public static void main(String[] args) {
 		log.info("Springboot Application running successfully successfully.....Thank you..Thank you!!");
